@@ -31,7 +31,7 @@ resource "aws_iam_policy" "adminUser" {
 
 resource "aws_iam_policy_attachment" "adminUser" {
     name = "adminUser"
-    users = [aws_iam_policy.adminUser.name]
+    users = [aws_iam_user.admin-user.name]
     policy_arn = aws_iam_policy.adminUser.arn
   
 }
