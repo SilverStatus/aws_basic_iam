@@ -4,4 +4,5 @@ variable "region" {
 
 variable "iam_user" {
     default = "lucy"
+    type = string
 }
