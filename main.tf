@@ -11,7 +11,7 @@ resource "aws_iam_user" "admin-user"{
     }
 }
 
-#create new policy for user
+#create new policy for user and define permissions for users
 resource "aws_iam_policy" "adminUser" {
     name = "adminUser"
     description = "Allow full access to all resources"
